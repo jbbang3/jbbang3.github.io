@@ -1,0 +1,50 @@
+body {
+    background-color:rgb(51, 50, 59);
+}
+h1{
+    color:white;
+    font-family: verdana;
+    font-size: 250%;
+    text-align:center;
+}
+
+p{
+    color:white;
+    font-family: courier;
+    font-size: 140%;
+}
+
+figcaption{
+    color:white;
+    font-family: Ariel;
+    font-size: 100%;
+}
+
+a:link {
+    color: rgb(243, 167, 205);
+}
+
+
+a:visited {
+    color: rgb(137, 198, 255);
+    text-decoration: underline
+}
+
+a:hover {
+    color: rgb(10, 206, 231);
+}
+
+img {
+    display: block;
+    max-width:400px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
