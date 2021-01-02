@@ -40,7 +40,7 @@ h1{
 }
 
 .topnav li a:active {
-    background-color: rgb(51, 50, 59);
+    border:solid gray;
     font-weight: bold;
 }
 
@@ -79,7 +79,7 @@ small screens (display the links vertically instead of horizontally) */
 .main{font-family: Arial, Helvetica, sans-serif;}
 p{font-size: 100%;}
 
-#mainpic{max-height:400;width:auto;}
+#mainpic{max-height:200%;width:auto;}
 
 .caption{
     font-family: Arial;
@@ -111,12 +111,12 @@ img{
     max-height:400px;
     width: auto;
     height: auto;
+    margin-top: 1%;
 }
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 50%;
 }
 
