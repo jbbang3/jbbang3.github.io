@@ -5,6 +5,21 @@
 <head>
   <title>JinBBang's Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    
+  <style>
+    h1{font-family:'Josefin Sans', sans-serif;}
+    h2,h3,h4,h5,h6{font-family: 'Source Code Pro', Courier, monospace;} 
+    h2 {font-size:1.5em; font-weight:bolder}
+    h3 {font-size:1.3em; font-weight:bolder}
+    h4 {font-size:1.em; font-weight:bolder}
+    h5 {font-size:0.9em; font-weight:bolder}
+    h6 {font-size:0.7em; font-weight:bolder}
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
   <meta charset ='utf-8'>
   <meta name="desciption" content="This is a website created to record JinBang's hobby">
   <meta name="author" content="JinBBang">
@@ -12,17 +27,16 @@
 </head>
 
 
-<header>
-  <h1>Welcome to JinBBang's home</h1>
-</header>
 
 <body>
+  <header>
+    <h1>Welcome to JinBBang's home</h1>
+  </header>
+  
 
-
-<!-- Or use an ID to style it. For ID you can use it only once. -->
 <div class='topnav' >
   <ul>
-    <li style="border-style:solid; border-color:lightgray;"><a href="index.html">Home</a></li>
+    <li id='menunow' ><a href="index.html">Home</a></li>
     <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="#about">About</a></li>
@@ -50,8 +64,8 @@ function myFunction() {
 
   <p>This is where I record the progress of my hobbies and interests</p>
 
-  <div class="center" style="text-align:center;">
-    <img src="JinBBang_main.jpg" alt="My picture" class="center" id="mainpic">
+  <div id="mainpic">
+    <img src="JinBBang_main.jpg" alt="My picture" style="max-width: 400px; margin:auto;">
     <p class='caption'> Taken at Falls of the Ohio State Park in 2019</p>
   </div>
 

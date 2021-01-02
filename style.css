@@ -2,19 +2,23 @@
 
 body {
     background-color:rgb(51, 50, 59);
+    font-size: 100%
 }
 h1{
-    font-family: Courier;
-    font-size: 200%;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2em;
     text-align:center;
 }
 
+
+
 .topnav {
     background-color: rgb(0, 0, 0);
-    font-size: 100%;
-    font-family:'Courier New', Courier, monospace;
-    border: 0.5px solid black;
-    overflow:hidden
+    font-size: 1em;
+    font-family:"Courier New", Courier, monospace;
+    border:none;
+    overflow:hidden;
+    padding: 0px;
 }
 
 .topnav ul {
@@ -22,6 +26,8 @@ h1{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    color:white;
+
 }
   
 .topnav ul li {
@@ -30,19 +36,28 @@ h1{
   
 .topnav li a {
     display: block;
+    font-size:1.1em;
     text-align: center;
+    vertical-align: middle;
     padding: 14px 16px;
     text-decoration: none;
 }
   
 .topnav li a:hover {
     background-color: #1b1b1b;
-}
-
-.topnav li a:active {
     border:solid gray;
     font-weight: bold;
 }
+
+#menunow {
+    border:solid gray;
+    font-weight: bold;
+}
+#menunow a{
+    border:none;
+}
+
+
 
 .topnav .icon {
     display: none;
@@ -77,30 +92,21 @@ small screens (display the links vertically instead of horizontally) */
 
 
 .main{font-family: Arial, Helvetica, sans-serif;}
-p{font-size: 100%;}
+p{font-size: 1em;}
 
-#mainpic{max-height:200%;width:auto;}
+#mainpic{
+    max-height:400px;
+    width:auto;
+    text-align: center;
+}
+
 
 .caption{
     font-family: Arial;
-    font-size: 90%;
+    font-size: 0.9em;
     margin-top: 2px;
 }
 
-a:link {
-    color:rgb(137, 198, 255);
-     ;
-}
-
-
-a:visited {
-    color:rgb(243, 167, 205)
-    /* text-decoration: underline */
-}
-
-a:hover {
-    color: rgb(10, 206, 231);
-}
 
 
 
@@ -117,7 +123,7 @@ img{
 .center {
     display: block;
     margin: auto;
-    width: 50%;
+    max-width: 300px;
 }
 
 input,button{color:black}
@@ -125,8 +131,7 @@ textarea {width:300px; height:200px;}
 
 
 
-
-
-footer{
-    font-family:'Courier New', Courier, monospace;
-}
+footer{font-family:"Courier New", Courier, monospace;}
+footer a:link {color:rgb(137, 198, 255);}
+footer a:visited {color:rgb(248, 206, 115)}
+footer a:hover {color: rgb(10, 206, 231);}

@@ -17,7 +17,7 @@
 </header>
 
 <body>
-<!-- Or use an ID to style it. For ID you can use it only once. -->
+
 <div if='menu' class='topnav'>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -28,7 +28,6 @@
       <i class="fa fa-bars"></i>
   </ul>
 </div>
-
 
 <script>
   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -44,23 +43,24 @@ function myFunction() {
 <br>
 
 
+
 <div class="main center">
     <!-- will be meaningful once I learn how to do PHP and deal with the input -->
-    <form action="/action_page.php" method="POST" class='center'>
+    <form action="/action_page.php" method="POST">
         <label for="fullname">Name</label> &nbsp;
         <input type="text" id="fullname" name="fname" required> <br><br>
         <label for="message">Message for JinBBang</label><br>
         <textarea type="text" id="message" name="message" maxlength="1000" placeholder="What a great website!" autofocus>
              </textarea><br>
-        <input type="submit" value="Submit" style='float:right; margin-right:28px;'>
-        <input type="reset" style='float:right; margin-right:8px;'>
+        <input type="submit" value="Submit" style='float:right;'>
+        <input type="reset" style='float:right;'>
          
     </form>
 </div>
+
+
 <br>
 <hr>
-
-
 <footer>
     <a href="#menu">Back to the top</a> <br>
     <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
