@@ -1,43 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+<!-- html block and inline -->
 
 <head>
-<title>JinBang's Doggy Pictures</title>
-<link rel="stylesheet" href="style.css">
-<meta charset ='UTF-8'>
-<meta name="desciption" content="This is a website created to record JinBang's hobby">
-<meta name="author" content="JinBang">
+  <title>JinBBang's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset ='utf-8'>
+  <meta name="desciption" content="This is a website created to record JinBang's hobby">
+  <meta name="author" content="JinBBang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
+<header>
+  <h1>Welcome to JinBBang's home</h1>
+</header>
+
 <body>
-
-<h1 id="puff1">Puppy Mr. Puff</h1>
-<p> Check out below the cutest picture of our little puppy, Mr. Puff</p>
-
-<a href="../index.html"> Back to the main menu</a>
-
-<img src="doggyPic/Puff_20150321.jpg" alt="Puff doggy" height="400" width="300">
-<img src="doggyPic/Puff_20150324.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_20150422.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_20150910.jpg" alt="Puff doggy" height="400" width="300">
-<img src="doggyPic/Puff_2017.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_20171123.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_20171123_2.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_20171123_3.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_2018_1.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_2018_2.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_2018_3.jpg" alt="Puff doggy" height="300" width="400">
-<img src="doggyPic/Puff_2019.jpg" alt="Puff doggy" height="400" width="300">
-<img src="doggyPic/Puff_2020.jpg" alt="Puff doggy" height="300" width="400">
+<!-- Or use an ID to style it. For ID you can use it only once. -->
+<div if='menu' class='topnav'>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+  </ul>
+</div>
 
 
-<a href="#puff1">Back to the top</a>
-
-<!--Below it the contact info-->
-<hr>
-<a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a>
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 <br>
-<a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me </a>
+
+
+<div class="main">
+
+    <h3>Mr. Puppy Mr. Puff</h3>
+    <p> Check out below the cutest picture of our little puppy, Mr. Puff</p>
+
+    
+    <img src="doggyPic/Puff_20150321.jpg" alt="Puff doggy" height="400" width="300">
+    <img src="doggyPic/Puff_20150324.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_20150422.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_20150910.jpg" alt="Puff doggy" height="400" width="300">
+    <img src="doggyPic/Puff_2017.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_20171123.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_20171123_2.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_20171123_3.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_2018_1.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_2018_2.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_2018_3.jpg" alt="Puff doggy" height="300" width="400">
+    <img src="doggyPic/Puff_2019.jpg" alt="Puff doggy" height="400" width="300">
+    <img src="doggyPic/Puff_2020.jpg" alt="Puff doggy" height="300" width="400">
+
+</div>
+<hr>
+
+
+
+<footer>
+    <a href="#menu">Back to the top</a> <br>
+    <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
+    <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
+    <address>Somewhere in USA</address>
+    
+</footer>
 
 
 </body>

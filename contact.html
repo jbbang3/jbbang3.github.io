@@ -17,10 +17,8 @@
 </header>
 
 <body>
-
-
 <!-- Or use an ID to style it. For ID you can use it only once. -->
-<div class='topnav'>
+<div if='menu' class='topnav'>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
@@ -46,29 +44,28 @@ function myFunction() {
 <br>
 
 
-<div class="main">
-
-  <p>This is where I record the progress of my hobbies and interests</p>
-
-  <div class="center" style="text-align:center;">
-    <img src="JinBBang_main.jpg" alt="My picture" class="center" id="mainpic">
-    <p class='caption'> Taken at Falls of the Ohio State Park in 2019</p>
-  </div>
-
-  <button type="button" onclick="alert('Hello there!')">Say Hello!</button>
-
-  <!--Below it the contact info-->
+<div class="main center">
+    <!-- will be meaningful once I learn how to do PHP and deal with the input -->
+    <form action="/action_page.php" method="POST">
+        <label for="fullname">Name</label> &nbsp;
+        <input type="text" id="fullname" name="fname" required> <br><br>
+        <label for="message">Message for JinBBang</label><br>
+        <textarea type="text" id="message" name="message" maxlength="1000" placeholder="What a great website!" autofocus>
+             </textarea><br>
+        <input type="submit" value="Submit" style='float:right; margin-right:28px;'>
+        <input type="reset" style='float:right; margin-right:8px;'>
+         
+    </form>
 </div>
-
 <hr>
+
+
 <footer>
-<a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a>
-<br>
-<a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
-<address>Somewhere in USA</address>
-
-<!-- add sitemap, back to top links -->
-
+    <a href="#menu">Back to the top</a> <br>
+    <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
+    <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
+    <address>Somewhere in USA</address>
+    
 </footer>
 
 </body>
