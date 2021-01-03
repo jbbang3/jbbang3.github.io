@@ -1,5 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- html block and inline -->
+
+<head>
+  <title>JinBBang's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    
+  <style>
+    h1{font-family:'Josefin Sans', sans-serif;font-size: 2em; text-align:center;}
+    h2,h3,h4,h5,h6{font-family: 'Source Code Pro', Courier, monospace;} 
+    h2 {font-size:1.5em; font-weight:bolder}
+    h3 {font-size:1.3em; font-weight:bolder}
+    h4 {font-size:1.em; font-weight:bolder}
+    h5 {font-size:0.9em; font-weight:bolder}
+    h6 {font-size:0.7em; font-weight:bolder}
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <meta charset ='utf-8'>
+  <meta name="desciption" content="This is a website created to record JinBang's hobby">
+  <meta name="author" content="JinBBang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 
 
+<body>
+  <header>
+    <h1>Welcome to JinBBang's home</h1>
+  </header>
+  
 
-<a href="https://map1.maploco.com/visited-countries/mine.php?c1=m67y4f4fsw-b33j9ynrb4-b33z6ndp8g-b33j9ynrcw-2rrvthpp1c"><img src="https://map1.maploco.com/visited-countries/ml/m67y4f4fsw-b33j9ynrb4-b33z6ndp8g-b33j9ynrcw-2rrvthpp1c.gif" border=0><br>Create Your Own Visited Countries Map</a>
+  <div>
+    <ul class='topnav' id="myTopnav">
+      <li><a href="index.html">Home</a></li>
+      <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a id='menunow'href="about.html">About</a></li>
+      <li class='icon'><a href="javascript:void(0);"  onclick="myFunction()">
+        <i class="fa fa-bars"></i></a></li>
+    </ul>
+  </div>
+
+
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {    
+        var x = document.getElementById("myTopnav");
+        // var y = x.getElementsByTagName("li");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+  </script>
+  <br>
+
+
+  <div class="main">
+        <h2>About Myself</h2> 
+        
+        <p><b>My majors:</b> Biological Sciences, Chemistry:</p> <br><br>
+        <p><b>Currnetly interested in:</b> All the computer stuff</p> <br><br>
+        <p><b>I have lived in (countries):</b></p>
+            <img src='about/korea.png' alt="South Korea" class='imagecountry'>
+            <img src='about/Malaysia.png' alt="Malaysia" class='imagecountry'>
+            <img src='about/USA.png' alt="USA" class='imagecountry'>
+        <p><b>I have lived in (states in the USA):</b></p>
+            <img src='about/indiana.png' alt="Indiana" class='imagecountry'>
+            <img src='about/illinois.svg' alt="Illinois" class='imagecountry'>
+            <img src='about/michigan.svg' alt="Michigan" class='imagecountry'>
+        <p><b>I have visited:</b></p>
+        <a href="https://map1.maploco.com/visited-countries/mine.php?c1=m67y4f4fsw-b33j9ynrb4-b33z6ndp8g-b33j9ynrcw-2rrvthpp1c">
+            <img src="https://map1.maploco.com/visited-countries/ml/m67y4f4fsw-b33j9ynrb4-b33z6ndp8g-b33j9ynrcw-2rrvthpp1c.gif" class='imagenorm'></a>
+
+    </div>
+
+ <br>
+ <hr>
+<footer>
+  <a href="#menu" style="float:right; display:inline;">Back to the top</a> 
+  <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
+  <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
+  <address>Somewhere in USA</address>
+</footer>
+
+</body>
+</html>
+
+
+

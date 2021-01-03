@@ -34,13 +34,13 @@
   </header>
   
 
-  <div class='topnav' id="myTopnav">
-    <ul>
+  <div>
+    <ul class='topnav' id="myTopnav">
       <li><a id='menunow' href="index.html">Home</a></li>
       <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="javascript:void(0);"  class="icon" onclick="myFunction()">
+      <li><a href="about.html">About</a></li>
+      <li class='icon'><a href="javascript:void(0);" onclick="myFunction()">
         <i class="fa fa-bars"></i></a></li>
     </ul>
   </div>
@@ -48,8 +48,9 @@
 
   <script>
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
+    function myFunction() {    
         var x = document.getElementById("myTopnav");
+        // var y = x.getElementsByTagName("li");
         if (x.className === "topnav") {
           x.className += " responsive";
         } else {
@@ -63,7 +64,7 @@
   <div class="main">
     <p>This is where I record the progress of my hobbies and interests</p>
 
-    <div id="mainpic">
+    <div id="mainpic center">
       <img src="JinBBang_main.jpg" alt="My picture" class='centerim'>
       <p class='caption'> Taken at Falls of the Ohio State Park in 2019</p>
     </div>

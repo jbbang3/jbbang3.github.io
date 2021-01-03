@@ -5,6 +5,21 @@
 <head>
   <title>JinBBang's Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    
+  <style>
+    h1{font-family:'Josefin Sans', sans-serif;font-size: 2em; text-align:center;}
+    h2,h3,h4,h5,h6{font-family: 'Source Code Pro', Courier, monospace;} 
+    h2 {font-size:1.5em; font-weight:bolder}
+    h3 {font-size:1.3em; font-weight:bolder}
+    h4 {font-size:1.em; font-weight:bolder}
+    h5 {font-size:0.9em; font-weight:bolder}
+    h6 {font-size:0.7em; font-weight:bolder}
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
   <meta charset ='utf-8'>
   <meta name="desciption" content="This is a website created to record JinBang's hobby">
   <meta name="author" content="JinBBang">
@@ -12,62 +27,53 @@
 </head>
 
 
-<header>
-  <h1>Welcome to JinBBang's home</h1>
-</header>
 
 <body>
+  <header>
+    <h1>Welcome to JinBBang's home</h1>
+  </header>
+  
 
-<div if='menu' class='topnav'>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="#about">About</a></li>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-  </ul>
-</div>
-
-<script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
-<br>
+  <div>
+    <ul class='topnav' id="myTopnav">
+      <li><a href="index.html">Home</a></li>
+      <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
+      <li><a id='menunow' href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class='icon'><a href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a></li>
+    </ul>
+  </div>
 
 
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {    
+        var x = document.getElementById("myTopnav");
+        // var y = x.getElementsByTagName("li");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+  </script>
+  <br>
 
-<div class="main centerform">
-    <!-- will be meaningful once I learn how to do PHP and deal with the input -->
-    <form action="/action_page.php" method="POST">
-        <label for="fullname">Name</label> &nbsp;
-        <input type="text" id="fullname" name="fname" required> <br><br>
-        <label for="message">Message for JinBBang</label><br>
-        <textarea type="text" id="message" name="message" maxlength="1000" placeholder="What a great website!" autofocus>
-             </textarea><br>
-        <input type="submit" value="Submit" style='float:right;'>
-        <input type="reset" style='float:right;'>
-         
-    </form>
-</div>
 
+  <div class="main">
+    <h2>You can leave me a message here!</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAZG6aa-yNtosouE3I_7KO_rrzPJCw7LMeOXofQwyH3xbccQ/viewform?embedded=true" width="640" height="606" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
 
-<br>
 <hr>
 <footer>
-    <a href="#menu">Back to the top</a> <br>
-    <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
-    <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
-    <address>Somewhere in USA</address>
-    
+  <a href="#menu" style="float:right; display:inline;">Back to the top</a> 
+  <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
+  <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
+  <address>Somewhere in USA</address>
 </footer>
 
 </body>
 </html>
+

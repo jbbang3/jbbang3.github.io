@@ -5,6 +5,21 @@
 <head>
   <title>JinBBang's Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    
+  <style>
+    h1{font-family:'Josefin Sans', sans-serif;font-size: 2em; text-align:center;}
+    h2,h3,h4,h5,h6{font-family: 'Source Code Pro', Courier, monospace;} 
+    h2 {font-size:1.5em; font-weight:bolder}
+    h3 {font-size:1.3em; font-weight:bolder}
+    h4 {font-size:1.em; font-weight:bolder}
+    h5 {font-size:0.9em; font-weight:bolder}
+    h6 {font-size:0.7em; font-weight:bolder}
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
   <meta charset ='utf-8'>
   <meta name="desciption" content="This is a website created to record JinBang's hobby">
   <meta name="author" content="JinBBang">
@@ -12,39 +27,41 @@
 </head>
 
 
-<header>
-  <h1>Welcome to JinBBang's home</h1>
-</header>
 
 <body>
-<!-- Or use an ID to style it. For ID you can use it only once. -->
-<div if='menu' class='topnav'>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="#about">About</a></li>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-  </ul>
-</div>
+  <header>
+    <h1>Welcome to JinBBang's home</h1>
+  </header>
+  
+
+  <div>
+    <ul class='topnav' id="myTopnav">
+      <li><a href="index.html">Home</a></li>
+      <li title="mainly pictures of my dog, Puff"><a id='menunow' href="doggyPicPage.html"> Doggy Pictures!</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class='icon'><a href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a></li>
+    </ul>
+  </div>
 
 
-<script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
-<br>
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {    
+        var x = document.getElementById("myTopnav");
+        // var y = x.getElementsByTagName("li");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+  </script>
+  <br>
 
 
-<div class="main">
+  <div class="main">
 
     <h2>Mr. Puppy Mr. Puff</h2>
     <p> Check out below the cutest picture of our little puppy, Mr. Puff</p>
@@ -53,96 +70,92 @@ function myFunction() {
       <a target="_blank" href="doggyPic/Puff_20150321.jpg">
         <img src="doggyPic/Puff_20150321.jpg" alt="Puff doggy" >
       </a>
-      <p class="caption">Puff in March, 2015</p>
+      <p class="desc">Puff in March, 2015</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_20150324.jpg"></a>
         <img src="doggyPic/Puff_20150324.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff in March, 2015</p>
+      <p class="desc">Puff in March, 2015</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_20150422.jpg">
         <img src="doggyPic/Puff_20150422.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff in April, 2015</p>
+      <p class="desc">Puff in April, 2015</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_20150910.jpg">
         <img src="doggyPic/Puff_20150910.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff in September, 2015</p>
+      <p class="desc">Puff in September, 2015</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_2017.jpg">
         <img src="doggyPic/Puff_2017.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is a teenager, 2017</p>
+      <p class="desc">Puff is a teenager, 2017</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_20171123.jpg">
         <img src="doggyPic/Puff_20171123.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is a teenager, 2017</p>
+      <p class="desc">Puff is a teenager, 2017</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_20171123_2.jpg">
        <img src="doggyPic/Puff_20171123_2.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is a teenager, 2017</p>
+      <p class="desc">Puff is a teenager, 2017</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_20171123_3.jpg">
         <img src="doggyPic/Puff_20171123_3.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is a teenager, 2017</p>
+      <p class="desc">Puff is a teenager, 2017</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_2018_1.jpg">
         <img src="doggyPic/Puff_2018_1.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is a big boi, 2018</p>
+      <p class="desc">Puff is a big boi, 2018</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_2018_2.jpg">
         <img src="doggyPic/Puff_2018_2.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is a big boi, 2018</p>
+      <p class="desc">Puff is a big boi, 2018</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_2018_3.jpg">
        <img src="doggyPic/Puff_2018_3.jpg" alt="Puff doggy">
       </a>
-       <p class="caption">Puff is a big boi, 2018</p>
+       <p class="desc">Puff is a big boi, 2018</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_2019.jpg">
         <img src="doggyPic/Puff_2019.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is a big boi, 2019</p>
+      <p class="desc">Puff is a big boi, 2019</p>
     </div>
     <div class=gallery>
       <a target="_blank" href="doggyPic/Puff_2020.jpg">
         <img src="doggyPic/Puff_2020.jpg" alt="Puff doggy">
       </a>
-      <p class="caption">Puff is getting old, 2020</p>
+      <p class="desc">Puff is still the cutest, 2020</p>
     </div>
   </div> 
 
 </div>
 <br>
+
 <hr>
-
-
-
 <footer>
-    <a href="#menu" style="float:right; display:inline;">Back to the top</a> <br>
-    <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
-    <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
-    <address>Somewhere in USA</address>
-    
+  <a href="#menu" style="float:right; display:inline;">Back to the top</a> 
+  <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
+  <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
+  <address>Somewhere in USA</address>
 </footer>
-
 
 </body>
 </html>
