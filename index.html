@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
     
   <style>
-    h1{font-family:'Josefin Sans', sans-serif;}
+    h1{font-family:'Josefin Sans', sans-serif;font-size: 2em; text-align:center;}
     h2,h3,h4,h5,h6{font-family: 'Source Code Pro', Courier, monospace;} 
     h2 {font-size:1.5em; font-weight:bolder}
     h3 {font-size:1.3em; font-weight:bolder}
@@ -34,55 +34,51 @@
   </header>
   
 
-<div class='topnav' >
-  <ul>
-    <li id='menunow' ><a href="index.html">Home</a></li>
-    <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="#about">About</a></li>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-  </ul>
-</div>
-
-
-<script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
-<br>
-
-
-<div class="main">
-
-  <p>This is where I record the progress of my hobbies and interests</p>
-
-  <div id="mainpic">
-    <img src="JinBBang_main.jpg" alt="My picture" style="max-width: 400px; margin:auto;">
-    <p class='caption'> Taken at Falls of the Ohio State Park in 2019</p>
+  <div class='topnav' id="myTopnav">
+    <ul>
+      <li><a id='menunow' href="index.html">Home</a></li>
+      <li title="mainly pictures of my dog, Puff"><a href="doggyPicPage.html"> Doggy Pictures!</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="javascript:void(0);"  class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a></li>
+    </ul>
   </div>
 
-  <button type="button" onclick="alert('Hello there!')">Say Hello!</button>
 
-  <!--Below it the contact info-->
-</div>
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+  </script>
+  <br>
+
+
+  <div class="main">
+    <p>This is where I record the progress of my hobbies and interests</p>
+
+    <div id="mainpic">
+      <img src="JinBBang_main.jpg" alt="My picture" class='centerim'>
+      <p class='caption'> Taken at Falls of the Ohio State Park in 2019</p>
+    </div>
+
+    <button type="button" onclick="alert('Hello there!')">Say Hello!</button>
+
+    <!--Below it the contact info-->
+  </div>
 
 <hr>
 <footer>
-<a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a>
-<br>
-<a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
-<address>Somewhere in USA</address>
-
-<!-- add sitemap, back to top links -->
-
+  <a href="#menu" style="float:right; display:inline;">Back to the top</a> 
+  <a href="https://twitter.com/donutJinBang" target="_blank"> My Twitter Account</a><br>
+  <a href="mailto:jinbbang3@gmail.com" target="_blank" rel="noopener">Email me &#128513</a>
+  <address>Somewhere in USA</address>
 </footer>
 
 </body>
