@@ -139,6 +139,8 @@ div.gallery img {
   height: auto;
 }
 
+/* #kor:hover {opacity:0.5; } */
+
 .desc {
     padding: 3px;
     text-align: center;
